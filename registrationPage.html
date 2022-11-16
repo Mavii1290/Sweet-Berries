@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+    <img src="assets/logo.png" alt="Sweet berries cooking school" />
+    </div>
+    <div class="mobile-nav-links">
+      <img src="assets/Vector.png" alt="vector" />
+    </div>
+<div class="navbar-links">
+  <p><a href="index.html">Courses</a></p>
+  <p><a href="">About Us</a></p>
+  <button class="getStarted"><a href="registrationPage.html">Get Started</a></button>
+</div>
+  </nav>
+  <form>
+    <div class="reg-form">
+      <img src="assets/logo.png" alt="Sweet berries cooking school" />
+    <h1>Register for your perfect online Cooking course</h1>
+      <div class="grid-container-form">
+      <label for="firstName">First Name*</label>
+      <input  type="text" id="firstName" placeholder="Required"><br>
+        <label for="lastName">Last Name*</label>
+      <input  type="text" id="lastName" placeholder="Required"><br>
+      <label for="email">Email*</label>
+      <input  type="email" id="email" placeholder="Required" width=100%><br>
+              <label for="course">Password*</label>
+      <input  type="password" id="password" placeholder="Required, minimum length:6  "><br>
+      <label for="course">Choose a course:</label>
+      <select name="course" id="course">
+        <option value="cooking-essentials">Cooking Essentials</option>
+        <option value="chef-skills">Chef Skills</option>
+        <option value="nutrition-cooking">Nutrition in Cooking</option>
+        <option value="plant-based">Plant-Based Cooking</option>
+        <option value="teens-kitchen">Teen's Kitchen</option><br>
+      </select><br>
+        <label for="notes">Notes:</label>
+        <textarea type="text" placeholder="Notes" ></textarea><br>
+      </div>
+      <div class="button-form">
+      <input type="reset" onclick="resetForm()" value="Reset">
+      <button onclick="">Submit</button>
+      </div>
+    </div>
+  </form>
+    <footer>
+    <div class="footer"><p>Sweet Berries</p></div>
+  </footer>
+  <script>
+function resetForm() {
+  document.getElementById("reg-form").reset();
+}
+</script>
+</body>
+</html>
